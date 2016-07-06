@@ -1,6 +1,6 @@
-# the project of ShES ---
+# the project of ShES  ---
 
-##web front-ends design---
+##web front-ends design ---
 
 1. html
 2. angular
