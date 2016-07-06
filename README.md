@@ -1,4 +1,4 @@
-# the project of ShES  ---
+# the project of ShES
 
 ##web front-ends design ---
 
