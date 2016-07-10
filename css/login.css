@@ -1,0 +1,38 @@
+/*自定义bootstrap.css*/
+.btn-group-lg>.btn, .btn-lg {
+	padding:5px 16px;
+}
+
+/*自定义*/
+.wrapper {
+	margin:200px 38%;
+}
+.logo {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.logo img{
+	display: inline-block;
+}
+.botton-group {
+ 	width: 100%;
+ 	float: left;
+}
+.button {
+	float: left;
+	width: 40%;
+}
+.button-left {
+	margin-right: 10%;
+}
+.button-right {
+	margin-left: 10%;
+}
+
+/*注册成功页面*/
+.success-info {
+	margin: 45px 0;
+}
+.redirect-login {
+	width: 70%;
+}
