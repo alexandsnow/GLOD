@@ -1,10 +1,12 @@
-/*限制在一屏显示*/
 body{
-	overflow:hidden;
+	overflow-x:hidden; 
 }
 ul{
 	margin-bottom: 0;
 }
 ul li{
 	list-style: none;
+}
+caption ,td,tr{
+	text-align: center;
 }
