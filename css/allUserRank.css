@@ -1,6 +1,6 @@
 /*banner样式开始*/
-.content .banner{*/
-	width: 100%;
+.content .banner{
+	margin-top: 10px;
 	background-image: url(../images/rank-banner.jpg);
 	background-size: cover;
     padding: 138px 0 0;
@@ -60,3 +60,18 @@
 	border-bottom: 4px solid #02915f;
 }
 /*rank 样式结束*/
+
+/*中屏样式*/
+@media (min-width: 768px) and (max-width: 960px) {
+	.dashboard .Mybox{
+		width:50%;  
+	}
+}
+/*中屏样式结束*/
+/*小屏样式开始*/
+@media (max-width: 767px) {
+	.dashboard .Mybox{
+		width:100%;  
+	}
+}
+/*小屏样式结束*/

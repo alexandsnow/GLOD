@@ -7,30 +7,94 @@
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/template.css">
+
+	<!-- 当前页面的自定义样式 -->
+	<link rel="stylesheet" type="text/css" href="css/answer.css">
 </head>
 <body>
-	<header>
-			<img class="logo-pic"src="images/logo.jpg" alt="首页">
-
-			<ul class="nav-bar float-left">
+	<nav class="navbar navbar-default navbar-fixed-top nav-bg clearfix" role="navigation">
+		<div class="navbar-header">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" 
+    		 data-target="#navbar-a">
+     			<span class="sr-only">切换导航</span>
+     			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+  			</button>
+  			<img class="logo-pic" src="images/logo.jpg" alt="首页">
+		</div>
+   		<div  class="collapse navbar-collapse" id="navbar-a">
+			<ul class="nav navbar-nav nav-bar float-left">
 				<li><a href="index.html">首页</a></li>
 				<li><a href="">测试</a></li>
-				<li><a href="">成绩</a></li>
+				<li><a href="allUserRank.html">成绩</a></li>
 			</ul>
-
-			<ul class="nav-bar float-right">
-				<li><a href="index.html">小明</a></li>
+			<ul class="nav navbar-nav nav-bar float-right">
+				<img class="user-pic" src="images/userPic.jpg" alt="用户头像">
+				<li class="username"><a href="index.html">小明</a></li>
 				<li><a href="login.html">退出</a></li>
 			</ul>
+		</div>
+	</nav>
 
-			<img class="user-pic"src="images/userPic.jpg" alt="用户头像">
 
-	</header>
 	<div class="content">
-		<button type="button" class="btn btn-lg btn-success">英雄榜</button>
-		<button type="button" class="btn btn-lg btn-primary">我要测试</button>
-		<button type="button" class="btn btn-lg btn-danger">结果评比</button>
+		<!-- 包括三个部分  提示模块 五个答题模块，确认倒计时模块 -->
+
+
+		<!-- 提示模块 -->
+		<div class="tip">
+			<p>恭喜!</p>
+			<h4>您的试卷已经生成,开始做题吧</h4>
+			<button type="button" class="btn btn-success tip-btn">先热身</button>
+		</div>
+		<!-- 提示模块结束 -->
+
+		<!-- 答题模块 -->
+		<div class="part clearfix shadow">
+			<div class="myBox">
+				<div class="boxContent MyColor1 shadow">
+					学习型班组
+				</div>
+			</div>
+			<div class="myBox">
+				<div class="boxContent MyColor2 shadow">
+					创新型班组
+				</div>
+			</div>
+			<div class="myBox">
+				<div class="boxContent MyColor3 shadow">
+					安全型班组
+				</div>
+			</div>
+			<div class="myBox">
+				<div class="boxContent MyColor4 shadow">
+					清洁型班组
+				</div>
+			</div>
+			<div class="myBox">
+				<div class="boxContent MyColor5 shadow">
+					节约型班组
+				</div>
+			</div>
+		</div>
+		<!-- 答题模块结束 -->
+		<!-- 倒计时模块 -->
+		<div class="part shadow">
+			<div class="time">
+				<p id="LeftTime">点击做题，倒计时开始！</p>
+				<button type="button" class="btn btn-success time-btn" onclick="runtime()">做题</button>
+			</div>
+
+		</div>
 	</div>
+
+
+
+
+
+
+
 	<footer>
 		<div class="foot-href">
 			<a href="">关于我们</a>|
@@ -43,5 +107,12 @@
 		</div>
 
 	</footer>
+
+
+<script type="text/javascript" src="libs/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="libs/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+<!-- 引入自定义script -->
+<script type="text/javascript" src="js/RunTime.js"></script>
 </body>
 </html>

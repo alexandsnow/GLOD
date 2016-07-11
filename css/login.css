@@ -5,7 +5,9 @@
 
 /*自定义*/
 .wrapper {
-	margin:200px 38%;
+	max-width: 400px;
+	margin:165px auto;
+	padding: 0 5px;
 }
 .logo {
 	text-align: center;
@@ -13,7 +15,6 @@
 }
 .logo img{
 	display: inline-block;
-	width: 100%;
 }
 .botton-group {
  	width: 100%;

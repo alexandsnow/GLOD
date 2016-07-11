@@ -10,3 +10,19 @@ ul li{
 caption ,td,tr{
 	text-align: center;
 }
+
+.MyColor1{
+	background-color: #4CAF50;
+}
+.MyColor2{
+	background-color: #00BCD4;
+}
+.MyColor3{
+	background-color: #9C27B0;
+}
+.MyColor4{
+	background-color: #CDDC39;
+}
+.MyColor5{
+	background-color: #009688;
+}

@@ -12,22 +12,30 @@
 </head>
 	
 <body>
-	<header>
-			<img class="logo-pic"src="images/logo.jpg" alt="首页">
-
-			<ul class="nav-bar float-left">
+	<nav class="navbar navbar-default navbar-fixed-top nav-bg clearfix" role="navigation">
+		<div class="navbar-header">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" 
+    		 data-target="#navbar-a">
+     			<span class="sr-only">切换导航</span>
+     			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+  			</button>
+  			<img class="logo-pic" src="images/logo.jpg" alt="首页">
+		</div>
+   		<div  class="collapse navbar-collapse" id="navbar-a">
+			<ul class="nav navbar-nav nav-bar float-left">
 				<li><a href="index.html">首页</a></li>
 				<li><a href="">测试</a></li>
-				<li><a href="">成绩</a></li>
+				<li><a href="allUserRank.html">成绩</a></li>
 			</ul>
-
-			<ul class="nav-bar float-right">
-				<li><a href="">小明</a></li>
+			<ul class="nav navbar-nav nav-bar float-right">
+				<img class="user-pic" src="images/userPic.jpg" alt="用户头像">
+				<li class="username"><a href="index.html">小明</a></li>
 				<li><a href="login.html">退出</a></li>
 			</ul>
-
-			<img class="user-pic"src="images/userPic.jpg" alt="用户头像">
-	</header>
+		</div>
+	</nav>	
 
 	<div class="content">
 		<!-- 包括三部分:banner  -->
@@ -71,93 +79,65 @@
 			<table class="table table-striped">
 				<caption>光荣榜10</caption>
 				<thead>
-					<tr>
-						<td>ID</td>
-						<td>部门</td>
-						<td>排名</td>
-						<td>分数</td>
+					<tr class="row">
+						<td class="col-sm-1">排名</td>
+						<td class="col-sm-5">部门</td>
+						<td class="col-sm-3">ID</td>
+						<td class="col-sm-3">分数</td>
 					</tr>
 				</thead>
-				  <tr class="success">
-					    <td>1</td>
-					    <td>TB - Monthly</td>
-					    <td>01/04/2012</td>
-					    <td>Approved</td>
+				  <tr class="success row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
 				  </tr>
 
-				  <tr class="info">
-					    <td>2</td>
-					    <td>TB - Monthly</td>
-					    <td>01/05/2012</td>
-					    <td>Approved</td>
+				  <tr class="info row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
+				  </tr>
+				    <tr class="success row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
 				  </tr>
 
-				  <tr class="success">
-					    <td>1</td>
-					    <td>TB - Monthly</td>
-					    <td>01/04/2012</td>
-					    <td>Approved</td>
+				  <tr class="info row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
+				  </tr>
+				    <tr class="success row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
 				  </tr>
 
-				  <tr class="info">
-					    <td>2</td>
-					    <td>TB - Monthly</td>
-					    <td>01/05/2012</td>
-					    <td>Approved</td>
+				  <tr class="info row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
 				  </tr>
-				  <tr class="success">
-					    <td>1</td>
-					    <td>TB - Monthly</td>
-					    <td>01/04/2012</td>
-					    <td>Approved</td>
-				  </tr>
-
-				  <tr class="info">
-					    <td>2</td>
-					    <td>TB - Monthly</td>
-					    <td>01/05/2012</td>
-					    <td>Approved</td>
-				  </tr>
-				  <tr class="success">
-					    <td>1</td>
-					    <td>TB - Monthly</td>
-					    <td>01/04/2012</td>
-					    <td>Approved</td>
+ 				  <tr class="success row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
 				  </tr>
 
-				  <tr class="info">
-					    <td>2</td>
-					    <td>TB - Monthly</td>
-					    <td>01/05/2012</td>
-					    <td>Approved</td>
+				  <tr class="info row">
+					    <td class="col-sm-1">1</td>
+					    <td class="col-sm-5">TB - Monthly</td>
+					    <td class="col-sm-3">01/04/2012</td>
+					    <td class="col-sm-3">Approved</td>
 				  </tr>
-				  <tr class="success">
-					    <td>1</td>
-					    <td>TB - Monthly</td>
-					    <td>01/04/2012</td>
-					    <td>Approved</td>
-				  </tr>
-
-				  <tr class="info">
-					    <td>2</td>
-					    <td>TB - Monthly</td>
-					    <td>01/05/2012</td>
-					    <td>Approved</td>
-				  </tr>
-				  <tr class="success">
-					    <td>1</td>
-					    <td>TB - Monthly</td>
-					    <td>01/04/2012</td>
-					    <td>Approved</td>
-				  </tr>
-
-				  <tr class="info">
-					    <td>2</td>
-					    <td>TB - Monthly</td>
-					    <td>01/05/2012</td>
-					    <td>Approved</td>
-				  </tr>
-
 
 			</table>
 		</div>
@@ -176,5 +156,7 @@
 			Copyright © 1999-2009 EDU Corporation, All Rights Reserved
 		</div>
 	</footer>
+	<script type="text/javascript" src="libs/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="libs/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

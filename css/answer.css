@@ -1,0 +1,43 @@
+.content .tip{
+	min-height: 400px; 
+	padding-top: 130px;
+	text-align: center;
+	color: #fff;
+	background-image: url(../images/answer.jpg);
+	background-size: cover;
+}
+.content .tip p{
+	font-weight: 700;
+    font-size: 35px;
+}
+.content .tip .tip-btn{
+	margin-top: 100px;
+}
+.content .part{
+	margin:20px 30px;
+	background-color: #fff;
+	border-top: 4px solid #02915f;
+}
+ .myBox{
+	width: 20%;
+	float: left;
+}
+.content .part .boxContent{
+	height: 80px;
+	line-height: 80px;
+	margin:20px 20px;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-box-shadow:0px 5px 4px #CCC;
+  	   -moz-box-shadow:0px 5px 4px #CCC;
+            box-shadow:0px 5px 4px #CCC;
+}
+.content .part .time{
+	text-align: center;
+	padding:50px 100px 20px;
+	line-height: 50px;
+	color: #02915f;
+}
+.content .part .time .time-btn{
+	margin-top: 20px;
+}
