@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/template.css">
-
 	<!-- 当前页面的自定义样式 -->
 	<link rel="stylesheet" type="text/css" href="css/answer.css">
 </head>
@@ -26,7 +25,7 @@
    		<div  class="collapse navbar-collapse" id="navbar-a">
 			<ul class="nav navbar-nav nav-bar float-left">
 				<li><a href="index.html">首页</a></li>
-				<li><a href="">测试</a></li>
+				<li><a href="answer.html">测试</a></li>
 				<li><a href="allUserRank.html">成绩</a></li>
 			</ul>
 			<ul class="nav navbar-nav nav-bar float-right">
@@ -35,64 +34,85 @@
 				<li><a href="login.html">退出</a></li>
 			</ul>
 		</div>
-	</nav>
+	</nav>	
 
-
+	<!-- content开始 -->
 	<div class="content">
 		<!-- 包括三个部分  提示模块 五个答题模块，确认倒计时模块 -->
-
-
 		<!-- 提示模块 -->
 		<div class="tip">
 			<p>恭喜!</p>
 			<h4>您的试卷已经生成,开始做题吧</h4>
-			<button type="button" class="btn btn-success tip-btn">先热身</button>
+			<button type="button" class="btn btn-lg btn-success begin-btn">开始答题</button>
+			<!-- 倒计时模块 -->
+			<div class="tic-toc clearfix">			
+				<a href="javascript:void(0)" id="days">0天</a>
+				<a href="javascript:void(0)" id="hours">0时</a>
+				<a href="javascript:void(0)javascript:void(0)" id="minutes">10分</a>
+				<a href="javascript:void(0)" id="seconds">00秒</a>
+			</div>
+			<p id="LeftTime">您已经没有答题时间，请查看自己的成绩！</p>
+			<!-- 倒计时模块结束 -->
 		</div>
-		<!-- 提示模块结束 -->
 
 		<!-- 答题模块 -->
 		<div class="part clearfix shadow">
 			<div class="myBox">
-				<div class="boxContent MyColor1 shadow">
+				<div class="boxContent MyColor1 shadow" id="itme1">
 					学习型班组
 				</div>
+				<div class="disabled-cover"></div>
 			</div>
 			<div class="myBox">
-				<div class="boxContent MyColor2 shadow">
+				<div class="boxContent MyColor2 shadow" id="itme2">
 					创新型班组
 				</div>
+				<div class="disabled-cover"></div>
 			</div>
 			<div class="myBox">
-				<div class="boxContent MyColor3 shadow">
+				<div class="boxContent MyColor3 shadow" id="itme3">
 					安全型班组
 				</div>
+				<div class="disabled-cover"></div>
 			</div>
 			<div class="myBox">
-				<div class="boxContent MyColor4 shadow">
+				<div class="boxContent MyColor4 shadow" id="itme4">
 					清洁型班组
 				</div>
+				<div class="disabled-cover"></div>
 			</div>
 			<div class="myBox">
-				<div class="boxContent MyColor5 shadow">
+				<div class="boxContent MyColor5 shadow" id="itme5">
 					节约型班组
 				</div>
+				<div class="disabled-cover"></div>
 			</div>
 		</div>
 		<!-- 答题模块结束 -->
-		<!-- 倒计时模块 -->
-		<div class="part shadow">
-			<div class="time">
-				<p id="LeftTime">点击做题，倒计时开始！</p>
-				<button type="button" class="btn btn-success time-btn" onclick="runtime()">做题</button>
+	</div>
+	<!-- content结束 -->
+	<!--模态弹出框 -->
+	<div class="modal fade" id="mymodal-data1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#myAlert">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">通知</h4>
+				</div>
+				<div class="modal-body">
+					<p><strong>请尽快完成当前类测试 <br> 中途不要退出，否则无法记录成绩</strong></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">重新选择</button>
+					<button type="button" class="btn btn-defaulti" id="answerJump" data-dismiss="modal">开始做题</button>
+				</div>
 			</div>
-
 		</div>
 	</div>
-
-
-
-
-
+	<!--模态弹出框结束 -->
 
 
 	<footer>
@@ -114,5 +134,6 @@
 
 <!-- 引入自定义script -->
 <script type="text/javascript" src="js/RunTime.js"></script>
+<script type="text/javascript" src="js/ModalAnimate.js"></script>
 </body>
 </html>

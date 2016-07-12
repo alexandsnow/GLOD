@@ -1,12 +1,25 @@
+var leftTime=599;
+
 function runtime(){
-	var endDate=new Date(2016,8,11,23,59,59);//年月日时分秒，月要减去1
-	var now=new Date();
-	var oft=Math.round((endDate-now)/1000);
-	var ofd=parseInt(oft/3600/24);
-	var ofh=parseInt((oft%(3600*24))/3600);
-	var ofm=parseInt((oft%3600)/60);
-	var ofs=oft%60;
-	document.getElementById('LeftTime').innerHTML='还有 '+ofd+' 天 ' +ofh+ ' 小时 ' +ofm+ ' 分钟 ' +ofs+ ' 秒';
-	if(ofs<0){document.getElementById('LeftTime').innerHTML='倒计时结束！';return;};
-	setTimeout('runtime()',1000);
+	window.setInterval(function(){
+		var day=0,hour=0,minute=0,second=0;//时间默认值
+		if(leftTime > 0){
+	    	day = Math.floor(leftTime / (60 * 60 * 24));
+	    	hour = Math.floor(leftTime / (60 * 60)) - (day * 24);
+	    	minute = Math.floor(leftTime / 60) - (day * 24 * 60) - (hour * 60);
+	    	second = Math.floor(leftTime) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+    	} 
+    	if (minute <= 9) minute = '0' + minute;
+    	if (second <= 9) second = '0' + second; 
+    	$("#days").text(day+"天");
+		$("#hours").text(hour+"时");
+		$("#minutes").text(minute+"分");
+		$("#seconds").text(second+"秒");
+		leftTime--;
+		if (leftTime==0) {
+			$("#LeftTime").show();
+			$(".tic-toc").hide();
+		}
+	},1000);
 }
+

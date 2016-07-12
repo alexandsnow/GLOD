@@ -1,0 +1,54 @@
+.content .part{
+	margin:30px 30px;
+	padding: 50px;
+	color: #080808;
+	background-color: #fff;
+}
+.content .part .testPaperTitle{
+	text-align: center;
+}
+.testPaperTitle h3{
+	font-weight: 700;
+}
+.testPaperTitle p{
+	font-size: 12px;
+    margin: 20px 50px;
+    border-bottom: 2px solid #02915f; 
+	padding-bottom: 20px;
+}
+
+.content .part .questionWrap{
+	margin:20px 50px;
+}
+.questionWrap .questionObj{
+	padding: 20px;
+    background-color: rgba(255,255,255,.1);
+    margin-bottom: 10px;
+    -webkit-box-shadow:0px 5px 4px #CCC; 
+  	   -moz-box-shadow:0px 5px 4px #CCC;  
+            box-shadow:0px 5px 4px #CCC;
+}	
+.questionWrap .questionObj .title{
+    font-size: 15px;
+    color: #080808;
+    font-weight: 700;
+}
+.questionWrap .questionObj .answers{
+	margin:10px 30px;
+
+}
+.answers .item{
+	padding: 5px 15px;
+}
+
+.content .btn-submit{
+	margin:20px 50px;
+	text-align: center;
+}
+
+.content #LeftTime{
+	position: fixed;
+	color: #eee;
+	bottom: 600px;
+	right: 80px;
+}
