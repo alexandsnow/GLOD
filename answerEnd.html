@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>成绩分析</title>
+	<title>答题结束</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/template.css">
-
-	<!-- 导入当前页面的样式 -->
-	<link rel="stylesheet" type="text/css" href="css/analysis.css">
+	<!-- 自定义样式 -->
+	<link rel="stylesheet" type="text/css" href="css/subAnswer.css">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top nav-bg clearfix" role="navigation">
+	<nav class="navbar navbar-default nav-bg clearfix" role="navigation">
 		<div class="navbar-header">
   			<button type="button" class="navbar-toggle" data-toggle="collapse" 
     		 data-target="#navbar-a">
@@ -26,10 +25,8 @@
    		<div  class="collapse navbar-collapse" id="navbar-a">
 			<ul class="nav navbar-nav nav-bar float-left">
 				<li><a href="index.html">首页</a></li>
-				<li><a href="">学习</a></li>
-				<li><a href="answer.html">测试</a></li>
-				<li><a href="allUserRank.html">排名</a></li>
-				<li><a href="Myscore.html">成绩</a></li>
+				<li><a href="">测试</a></li>
+				<li><a href="allUserRank.html">成绩</a></li>
 			</ul>
 			<ul class="nav navbar-nav nav-bar float-right">
 				<img class="user-pic" src="images/userPic.jpg" alt="用户头像">
@@ -38,34 +35,14 @@
 			</ul>
 		</div>
 	</nav>	
-
-
-	<div class="content clearfix">
-		<!-- 柱状图和饼图 -->
-		<div class="clearfix">
-			<div class="half-part">
-				<div class="subpart Myshadow">
-					<div id="MyBar"></div>
-				</div>
-			</div>
-
-			<div class="half-part">
-				<div class="subpart Myshadow">
-					<div id="MyPie"></div>
-				</div>
-			</div>
-		</div>
-		<!-- tips -->
-		<div class="part">
-			<div class="subpart Myshadow">
-				<h2>Tips</h2>
-				<hr>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab totam voluptas animi eius ducimus molestiae aspernatur ratione sed! Quidem, dolor, soluta iure eveniet porro praesentium possimus perspiciatis architecto expedita suscipit.</p>
-				<button type="button" class="btn btn-danger">加强学习</button>
-			</div>
-		</div>
-		
-		
+	<div class="content">
+		<div class="answerEnn-part">
+			<hr>
+			<p>恭喜，这部分答题结束!</p>
+			<p>剩余时间：5 分 36 秒</p>
+			<hr/>
+			<button type="button" class="btn btn-info">返回做题</button>
+		</div>		
 	</div>
 
 
@@ -82,10 +59,9 @@
 	</footer>
 
 
+
 <script type="text/javascript" src="libs/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="libs/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="libs/echarts.common.min.js"></script>
-<!-- 引入自定义script -->
-<script type="text/javascript" src="js/analysis.js"></script>
+
 </body>
 </html>

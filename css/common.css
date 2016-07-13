@@ -7,9 +7,16 @@ ul{
 ul li{
 	list-style: none;
 }
+a{
+	text-decoration: none;
+}
 caption ,td,tr{
 	text-align: center;
 }
+
+.MyThemeColor{
+	background-color: #02915f;
+}	
 
 .MyColor1{
 	background-color: #4CAF50;
@@ -25,4 +32,10 @@ caption ,td,tr{
 }
 .MyColor5{
 	background-color: #009688;
+}
+.Myshadow{
+	background-color: #fff;
+	-webkit-box-shadow:0px 5px 4px #CCC;
+  	   -moz-box-shadow:0px 5px 4px #CCC;
+            box-shadow:0px 5px 4px #CCC;
 }

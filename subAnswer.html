@@ -26,8 +26,10 @@
    		<div  class="collapse navbar-collapse" id="navbar-a">
 			<ul class="nav navbar-nav nav-bar float-left">
 				<li><a href="index.html">首页</a></li>
-				<li><a href="">测试</a></li>
-				<li><a href="allUserRank.html">成绩</a></li>
+				<li><a href="">学习</a></li>
+				<li><a href="answer.html">测试</a></li>
+				<li><a href="allUserRank.html">排名</a></li>
+				<li><a href="Myscore.html">成绩</a></li>
 			</ul>
 			<ul class="nav navbar-nav nav-bar float-right">
 				<img class="user-pic" src="images/userPic.jpg" alt="用户头像">
@@ -35,7 +37,7 @@
 				<li><a href="login.html">退出</a></li>
 			</ul>
 		</div>
-	</nav>
+	</nav>	
 
 
 	<div class="content clearfix">
@@ -222,7 +224,7 @@
 		</div>
 
 		<div class="btn-submit">
-			<button type="button" class="btn btn-success">提交答案</button>
+			<button type="button" class="btn btn-success" onclick="submitAnswer()">提交答案</button>
 		</div>	
 
 		<div id="LeftTime">
@@ -249,7 +251,6 @@
 <script type="text/javascript" src="libs/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 <!-- 引入自定义script -->
-<script src="js/init.js"></script>
 <script src="js/RunTime.js"></script>
 <script src="js/subAnswer.js"></script>
 </body>

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>成绩分析</title>
+	<title>我的成绩</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/template.css">
 
 	<!-- 导入当前页面的样式 -->
-	<link rel="stylesheet" type="text/css" href="css/analysis.css">
+	<link rel="stylesheet" type="text/css" href="css/score.css">
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top nav-bg clearfix" role="navigation">
@@ -41,28 +41,38 @@
 
 
 	<div class="content clearfix">
-		<!-- 柱状图和饼图 -->
-		<div class="clearfix">
-			<div class="half-part">
-				<div class="subpart Myshadow">
-					<div id="MyBar"></div>
+		<!-- tips -->
+		<div class="part Myshadow ">
+			<div class="partWrap clearfix">
+				<div class="subpart">
+					<div class="Mybox MyColor1">
+					    综合等级
+					</div>
 				</div>
-			</div>
-
-			<div class="half-part">
-				<div class="subpart Myshadow">
-					<div id="MyPie"></div>
+				<div class="subpart">
+					<div class="Mybox MyColor1">
+						平均成绩
+					</div>
+				</div>
+				<div class="subpart">
+					<div class="Mybox MyColor1">
+						系统排名
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- tips -->
-		<div class="part">
-			<div class="subpart Myshadow">
-				<h2>Tips</h2>
-				<hr>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab totam voluptas animi eius ducimus molestiae aspernatur ratione sed! Quidem, dolor, soluta iure eveniet porro praesentium possimus perspiciatis architecto expedita suscipit.</p>
-				<button type="button" class="btn btn-danger">加强学习</button>
-			</div>
+
+		<div class="part1 Myshadow">
+			<h2>Congraulations</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab totam voluptas animi eius ducimus molestiae aspernatur ratione sed! Quidem, dolor, soluta iure eveniet porro praesentium possimus perspiciatis architecto expedita suscipit.</p>
+			<a href="analysis.html"><button type="button" class="btn btn-danger">成绩分析</button></a>
+		</div>
+
+		<div class="part1 Myshadow">
+			<h2>规则说明</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab totam voluptas animi eius ducimus molestiae aspernatur ratione sed! Quidem, dolor, soluta iure eveniet porro praesentium possimus perspiciatis architecto expedita suscipit.</p>
 		</div>
 		
 		
@@ -84,8 +94,6 @@
 
 <script type="text/javascript" src="libs/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="libs/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="libs/echarts.common.min.js"></script>
 <!-- 引入自定义script -->
-<script type="text/javascript" src="js/analysis.js"></script>
 </body>
 </html>
