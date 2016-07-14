@@ -86,7 +86,6 @@
 
 .tic-toc  {
 	text-align: center;
-	/*display: none;*/
 }
 .tic-toc a {
 	text-decoration: none;
@@ -107,6 +106,7 @@
 #LeftTime {
 	display: none;
 	font-size: 25px;
+	margin-top: 35px;
 }
 @media (min-width: 468px) and (max-width: 960px) {
 	.myBox{

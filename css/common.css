@@ -1,5 +1,5 @@
 body{
-	overflow-x:hidden; 
+	overflow-x:hidden;
 }
 ul{
 	margin-bottom: 0;
@@ -10,7 +10,7 @@ ul li{
 a{
 	text-decoration: none;
 }
-caption ,td,tr{
+caption,td,tr{
 	text-align: center;
 }
 
@@ -19,19 +19,19 @@ caption ,td,tr{
 }	
 
 .MyColor1{
-	background-color: #4CAF50;
+	background-color: rgba(76, 175, 80, 0.71);
 }
 .MyColor2{
-	background-color: #00BCD4;
+	background-color: rgba(0, 188, 212, 0.71);
 }
 .MyColor3{
-	background-color: #9C27B0;
+	background-color: rgba(156, 39, 176, 0.71);
 }
 .MyColor4{
-	background-color: #CDDC39;
+	background-color: rgba(0,0,0,0.5);
 }
 .MyColor5{
-	background-color: #009688;
+	background-color: rgba(0, 150, 136, 0.71);
 }
 .Myshadow{
 	background-color: #fff;

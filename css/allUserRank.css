@@ -30,10 +30,9 @@
 
 /*dashboard 样式开始*/
 .dashboard{
-	width: 80%;
+	width: 90%;
 	margin:30px auto 20px;
-	background-color: #fff;
-	border-bottom: 4px solid #02915f;
+	border-top: 4px solid #02915f;
 }
 
 .dashboard .Mybox{
@@ -42,22 +41,37 @@
 }
 
 .dashboard .Mybox .boxContent{
-	height: 80px;
-	margin:20px 30px;
+	height: 120px;
+	margin:30px 30px;
+	color: #fff;
 	text-align: center;
-	line-height: 100px;
+	line-height: 120px;
 	border-radius: 10px;
+}
+.Mybox .boxContent span{
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
 }
 /*dashboard样式结束*/
 
 /*rank 样式开始*/
 .rank{
-	width: 80%;
+	width: 90%;
 	margin:30px auto 2px;
 	padding:0 2px;
-	background-color: #fff;
 	padding:10px 2px;
-	border-bottom: 4px solid #02915f;
+}
+.rank caption{
+	font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin: 30px auto 23px;
+    border-bottom: 2px solid #02915f;
+}
+.rank .wrap{
+	width: 80%;
+	margin:0 auto;
 }
 /*rank 样式结束*/
 

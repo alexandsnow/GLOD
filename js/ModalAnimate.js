@@ -1,20 +1,21 @@
 $(function(){
 	$(".begin-btn").click(function(){		
-		runtime();
+		CalcLeftTime();
 		$(".begin-btn").attr("disabled",true);
 		$(".disabled-cover").fadeOut();
 	});
 });
-pageJump("MyColor1");
-pageJump("MyColor2");
-pageJump("MyColor3");
-pageJump("MyColor4");
-pageJump("MyColor5");
 
-function pageJump(index){
+Jump2AnswerPage("MyColor1");
+Jump2AnswerPage("MyColor2");
+Jump2AnswerPage("MyColor3");
+Jump2AnswerPage("MyColor4");
+Jump2AnswerPage("MyColor5");
+
+function Jump2AnswerPage(index){
 	$("."+index).click(
 		function(){
-		    $("#mymodal-data1").modal();
+		    $("#mymodal-data").modal();
 		    var IdName;
 		    $(document).click(function (e) {
 				IdName=($(e.target).attr('id'));  // 获取id
@@ -22,7 +23,6 @@ function pageJump(index){
 
 		    $("#answerJump").click(
 		    	function(){
-		    		console.log("you have clicked "+IdName);
 		    		switch(IdName){
 		    			case "itme1":
 		    			window.open("subAnswer.html");
