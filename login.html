@@ -5,28 +5,51 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
-<body>
+<body ng-app="ShES_login" ng-controller="LoginController">
 	<div class="wrapper clearfix">
 		<div class="logo">
 			<img src="images/logo.jpg" alt="上海教育超市">
 		</div>
-		<form class="clearfix" role="form">	
+
+		<form class="clearfix" role="form" name="LoginForm" ng-submit="Login()">	
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="请输入用户名/员工号"/>
+				<input type="text" class="form-control" placeholder="请输入用户名/员工号"
+					name="Name"
+					ng-class="{'error':LoginForm.Name.$invalid && LoginForm.Name.$touched}"
+					ng-model="userData.userName" 
+					ng-maxlength="15"
+					ng-minlength="6"
+					required
+				 />
+				 <div class="warning" ng-if="LoginForm.Name.$invalid && LoginForm.Name.$touched">请输入6到15位的用户名</div>
 			</div>
 			<div class="form-group">
-				<input type="password" class="form-control" placeholder="请输入密码"/>
+				<input type="password" class="form-control" placeholder="请输入密码"
+					name="password"
+					ng-model="userData.password"
+					ng-maxlength="10"
+					ng-minlength="6"
+					required
+					ng-class="{'error':LoginForm.password.$invalid && LoginForm.password.$touched}"
+				/>
+				<div class="warning" ng-if="LoginForm.password.$invalid && LoginForm.password.$touched">请输入6到10位的密码</div>
 			</div>
 			<div class="form-group">
-				<a href="index.html"><button type="button" class="btn btn-success btn-lg btn-block">登录</button></a>
+				<button type="submit" 
+					class="btn btn-success btn-lg btn-block"
+					ng-disabled="LoginForm.$invalid"
+				>登录</button>
 			</div>
 			<div class="botton-group">
 				<a href="register.html" class="btn btn-success  button button-left">注册</a>
 				<a href="forgetPswd.html" class="btn btn-success  button button-right">忘记密码</a>
 			</div>
 		</form>
-	</div>	
+	</div>
+<script type="text/javascript" src="libs/angular.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

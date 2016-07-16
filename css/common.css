@@ -39,3 +39,10 @@ caption,td,tr{
   	   -moz-box-shadow:0px 5px 4px #CCC;
             box-shadow:0px 5px 4px #CCC;
 }
+.error{
+	border:1px solid red;
+}
+.warning{
+	margin-top: 2px;
+	color: red;
+}
