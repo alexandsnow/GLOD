@@ -1,0 +1,56 @@
+<nav class="navbar navbar-default navbar-fixed-top nav-bg clearfix" role="navigation">
+		<div class="navbar-header">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" 
+    		 data-target="#navbar-a">
+     			<span class="sr-only">切换导航</span>
+     			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+  			</button>
+  			<img class="logo-pic" src="images/logo.jpg" alt="首页">
+		</div>
+   		<div  class="collapse navbar-collapse" id="navbar-a">
+			<ul class="nav navbar-nav nav-bar float-left">
+				<li ng-click="navSelect(0)" ng-class="{true:'isSelected',false:'noSelected'}[navActived1]">
+					<a ui-sref="header.indexpage">首页</a>
+				</li>
+				<li  ng-click="navSelect(1)" ng-class="{true:'isSelected',false:'noSelected'}[navActived2]">
+					<a ui-sref="header.study">学习</a>
+				</li>
+				<li  ng-click="navSelect(2)" ng-class="{true:'isSelected',false:'noSelected'}[navActived3]">
+					<a ui-sref="header.answer">测试</a>
+				</li>
+				<li  ng-click="navSelect(3)" ng-class="{true:'isSelected',false:'noSelected'}[navActived4]">
+					<a ui-sref="header.allUserRank" >排名</a>
+				</li>
+				<li  ng-click="navSelect(4)" ng-class="{true:'isSelected',false:'noSelected'}[navActived5]">
+					<a ui-sref="header.myScore">成绩</a>
+				</li>
+			</ul>
+			<div class="nav navbar-nav nav-bar float-right">
+				<img class="user-pic" src="images/userPic.jpg" alt="用户头像" data-toggle="tooltip" data-placement="bottom">
+				<div class="username" ng-bind="username"></div>
+				<div>|</div>
+				<div class="out"><a ui-sref="login">退出</a></div>
+			</div>
+		</div>
+</nav>
+
+<div class="views-bg">
+	<div ui-view="nav-indexpage" ></div>
+	<div ui-view="nav-study"></div>
+	<div ui-view="nav-answer"></div>
+	<div ui-view="nav-rank"></div>
+	<div ui-view="nav-score"></div>
+
+	<footer class="clearfix">
+		<div class="foot-href">
+			<a href="">关于我们</a>|
+			<a href="">员工查询</a>|
+			<a href="">会员注册</a>
+		</div>
+		<div class="copyright">
+			Copyright © 1999-2009 EDU Corporation, All Rights Reserved
+		</div>
+	</footer>
+</div>

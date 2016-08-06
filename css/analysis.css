@@ -37,7 +37,13 @@
 	border-top: 3px solid #02915f;
 	padding-bottom: 10px;
 }
-@media(max-width: 860px){
+@media (min-width: 768px) and (max-width: 979px){
+	.content .half-part{
+		width: 100%;
+	}
+}
+
+@media(max-width: 767px){
 	.content .half-part{
 		width: 100%;
 		margin:0 auto;

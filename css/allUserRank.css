@@ -1,6 +1,5 @@
 /*banner样式开始*/
-.content .banner{
-	margin-top: 10px;
+.content .rank-banner{
 	background-image: url(../images/rank-banner.jpg);
 	background-size: cover;
     padding: 138px 0 0;
@@ -9,20 +8,20 @@
     position: relative;
     opacity: 0.9;
 }
-.content .banner h2{
+.content .rank-banner h2{
 	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
 	font-weight: 500;
     line-height: 1.1;
     color: inherit;
 }
-.content .banner p{
+.content .rank-banner p{
 	line-height: 24px;
     margin: 30px auto 40px auto;
     font-size: 16px;
     width: 65%;
 }
-.content .banner button{
+.content .rank-banner button{
 	margin-top: 10px;
 }
 

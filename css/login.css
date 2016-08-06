@@ -15,6 +15,7 @@
 }
 .logo img{
 	display: inline-block;
+	width: 100%;
 }
 .botton-group {
  	width: 100%;

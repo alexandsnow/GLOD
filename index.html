@@ -1,134 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="indexApp">
 <head>
-	<title>主页</title>
+	<title>上海教育超市</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="content-Type">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/template.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/study.css">
+	<link rel="stylesheet" type="text/css" href="css/allUserRank.css">
+	<link rel="stylesheet" type="text/css" href="css/answer.css">
+	<link rel="stylesheet" type="text/css" href="css/subAnswer.css">
+	<link rel="stylesheet" type="text/css" href="css/score.css">
+	<link rel="stylesheet" type="text/css" href="css/analysis.css">
+
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
-<body>		
-	<nav class="navbar navbar-default navbar-fixed-top nav-bg clearfix" role="navigation">
-		<div class="navbar-header">
-  			<button type="button" class="navbar-toggle" data-toggle="collapse" 
-    		 data-target="#navbar-a">
-     			<span class="sr-only">切换导航</span>
-     			<span class="icon-bar"></span>
-    			<span class="icon-bar"></span>
-     			<span class="icon-bar"></span>
-  			</button>
-  			<img class="logo-pic" src="images/logo.jpg" alt="首页">
-		</div>
-   		<div  class="collapse navbar-collapse" id="navbar-a">
-			<ul class="nav navbar-nav nav-bar float-left">
-				<li><a href="index.html">首页</a></li>
-				<li><a href="">学习</a></li>
-				<li><a href="answer.html">测试</a></li>
-				<li><a href="allUserRank.html">排名</a></li>
-				<li><a href="Myscore.html">成绩</a></li>
-			</ul>
-			<ul class="nav navbar-nav nav-bar float-right">
-				<img class="user-pic" src="images/userPic.jpg" alt="用户头像">
-				<li class="username"><a href="index.html">小明</a></li>
-				<li><a href="login.html">退出</a></li>
-			</ul>
-		</div>
-	</nav>	
-	<div class="content">
-		<div id="myCarousel" class="banner carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-      			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-     			<li data-target="#myCarousel" data-slide-to="1"></li>
-      			<li data-target="#myCarousel" data-slide-to="2"></li>
-   			</ol>  
-			
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="images/banner.png" alt="banner">
-				</div>
-				<div class="item">
-					<img src="images/banner1.png" alt="banner1">
-				</div>
-				<div class="item">
-					<img src="images/banner2.png" alt="banner2">
-				</div>
-			</div>
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-		</div>
-		<div class="cards-group">
-			<ul class="clearfix">
-				<li class="card">
-					<img src="images/card1.jpg">
-					<div class="card-middle">
-						<p>智慧学习</p>
-						<p>温故知新</p>
-						<p>查漏补缺</p>
-						<p>先人一步</p>
-					</div>
-					<div class="card-bottom">
-						<a href="#">线上学习</a>
-					</div>
-				</li>
-				<li class="card">
-					<img src="images/card2.jpg">
-					<div class="card-middle">
-						<p>榜上有名</p>
-						<p>独占鳌头</p>
-						<p>金榜题名</p>
-						<p>为人楷模</p>
-					</div>
-					<div class="card-bottom">
-						<a href="allUserRank.html">英雄榜</a>
-					</div>
-				</li>
-				<li class="card">
-					<img src="images/card1.jpg">
-					<div class="card-middle">
-						<p>擦掌磨拳</p>
-						<p>敢于试验</p>
-						<p>意气奋发</p>
-						<p>挥斥方遒</p>
-					</div>
-					<div class="card-bottom">
-						<a href="answer.html">我要测试</a>
-					</div>	
-				</li>
-				<li class="card">
-					<img src="images/card2.jpg">
-					<div class="card-middle">
-						<p>战况分析</p>
-						<p>意见指导</p>
-						<p>扬长辟短</p>
-						<p>加强学习</p>
-					</div>
-					<div class="card-bottom">
-						<a href="Myscore.html">我的成绩</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+<body>	
+
+	<div ui-view></div>	
 
 
-	<footer class="clearfix">
-		<div class="foot-href">
-			<a href="">关于我们</a>|
-			<a href="">员工查询</a>|
-			<a href="">会员注册</a>
-		</div>
-
-		<div class="copyright">
-			Copyright © 1999-2009 EDU Corporation, All Rights Reserved
-		</div>
-	</footer>
+	<!-- 引用库文件 -->
 	<script type="text/javascript" src="libs/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="libs/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/echarts.common.min.js"></script>
+	<script type="text/javascript" src="libs/roundabout.js"></script>
+	<script type="text/javascript" src="libs/roundabout_shapes.js"></script>
+
+	
+	<!-- 引用AngularJS框架 -->
+	<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="libs/angular/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="libs/angular/angular-animate/angular-animate.min.js"></script>
+	<!-- app.js和router -->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="router.js"></script>
+	<!-- controllers -->
+	<script type="text/javascript" src="controllers/loginCtrl.js"></script>
+	<script type="text/javascript" src="controllers/registerCtrl.js"></script>
+	<script type="text/javascript" src="controllers/forgetPswdCtrl.js"></script>
+
+	<script type="text/javascript" src="controllers/headerController.js"></script>
+	<script type="text/javascript" src="controllers/indexpageController.js"></script>
+	<script type="text/javascript" src="controllers/studyCtrl.js"></script>
+	<script type="text/javascript" src="controllers/allUserRankController.js"></script>
+	
+	<script type="text/javascript" src="controllers/answerCtrl.js"></script>
+	<script type="text/javascript" src="controllers/subAnswer1Ctrl.js"></script>
+	<script type="text/javascript" src="controllers/subAnswer2Ctrl.js"></script>
+	<script type="text/javascript" src="controllers/subAnswer3Ctrl.js"></script>
+	<script type="text/javascript" src="controllers/subAnswer4Ctrl.js"></script>
+	<script type="text/javascript" src="controllers/subAnswer5Ctrl.js"></script>
+
+	<script type="text/javascript" src="controllers/myScoreCtrl.js"></script>
+	<script type="text/javascript" src="controllers/analysisCtrl.js"></script>
+
 </body>
 </html>

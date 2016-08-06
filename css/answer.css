@@ -34,9 +34,10 @@
 	display: none;
 }
 /*模态弹出框样式结束*/
+
 .content .tip{
 	min-height: 420px; 
-	padding-top: 85px;
+	padding-top: 130px;
 	text-align: center;
 	color: #fff;
 	background-image: url(../images/answer.jpg);
@@ -49,7 +50,14 @@
 .content .tip .begin-btn{
 	margin: 20px 15px;
 }
-.content .part{
+.tip .wram-note {
+	margin-top: 30px;
+	display: none;
+}
+.tip .wram-note i {
+	font-size: 60px;
+}
+.content .answer-part {
 	margin:20px 30px;
 	background-color: #fff;
 	border-top: 4px solid #02915f;
@@ -60,7 +68,7 @@
 	cursor: pointer;
 	position: relative;
 }
-.content .part .boxContent{
+.content .answer-part .boxContent{
 	color: #FFF;
 	font-size: 24px;
 	font-weight: 700;
@@ -102,11 +110,6 @@
 .tic-toc a:hover {
 	background-color: rgba(234,32,0,0.8);
 	color: #FFF;
-}
-#LeftTime {
-	display: none;
-	font-size: 25px;
-	margin-top: 35px;
 }
 @media (min-width: 468px) and (max-width: 960px) {
 	.myBox{

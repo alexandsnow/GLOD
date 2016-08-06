@@ -1,19 +1,20 @@
-.content .part{
+.content .score-part{
 	width: 80%;
 	margin:0 auto;
 }
+
 .content .partWrap{
 	width:60%;
 	text-align: center;
 	margin:0 auto;
 }
-.content .part .subpart{
+.content .score-part .subpart{
 	width: 33.3%;
 	margin:20px auto;
 	float: left;
 	text-align: center;
 }
-.part .subpart .Mybox{
+.score-part .subpart .Mybox{
 	margin:20px auto;
 	display: inline-block;
 	height: 100px;
@@ -37,14 +38,14 @@
 	margin-top: 30px;	
 }
 
-@media(min-width: 769px) and (max-width: 1100px){
-	.content .part .subpart{
-		width: 50%;
+@media(min-width: 768px) and (max-width: 979px){
+	.content .score-part .subpart{
+		width: 30%;
 		margin:0 auto;
 		float: left;
 		text-align: center;
 	}
-	.part .subpart .Mybox{
+	.score-part .subpart .Mybox{
 		margin:10px auto;
 	}
 	.content .part1{
@@ -52,16 +53,80 @@
 	}
 }
 @media (max-width: 767px){
-	.content .part .subpart{
+	.content .score-part .subpart{
 	width: 100%;
 	margin:0 auto;
 	float: left;
 	text-align: center;
 	}
-	.part .subpart .Mybox{
+	.score-part .subpart .Mybox{
 		margin:10px auto;
 	}
 	.content .part1{
 		padding:10px 30px 30px;
 	}
+}
+
+/* Global Structure ============================================================= */
+.container-gallery {
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+	font-size:.8125em;
+}
+
+/*Gallery*/
+#gallery {
+	height:496px;
+	overflow:hidden;
+}
+
+
+/*===== gallery =====*/
+.roundabout-holder  { 
+	width:850px;
+	height:496px;
+	margin:0 auto;
+}
+.roundabout-moveable-item {
+   width: 646px;
+   height: 416px;
+   cursor: pointer;
+	 border:3px solid #ccc;
+	 border:3px solid rgba(0, 0, 0, 0.08);
+   border-radius:4px;
+	 -moz-border-radius:4px;
+	 -webkit-border-radius:4px;
+}
+.roundabout-moveable-item img{
+		width:100%;
+}
+.roundabout-in-focus {
+	border:3px solid rgba(0, 0, 0, 0.2);
+}
+
+/*--- loopedSlider styles ---*/
+/*
+ * Required 
+*/
+#loopedSlider .wrap { width:295px; height:295px; overflow:hidden; position:relative;}
+#loopedSlider .slides { position:absolute; top:0; left:0; }
+#loopedSlider .slides div { position:absolute; top:0; width:295px; display:none; }
+/*
+ * Optional
+*/
+#loopedSlider { width:295px; position:relative; clear:both; }
+#loopedSlider .nav-controls {
+	width:100%;
+	overflow:hidden;
+	padding-top:10px;
+}
+#loopedSlider li {
+	display:inline;
+}
+#loopedSlider li a.previous {
+	float:left;
+}
+#loopedSlider li a.next {
+	float:right;
 }
